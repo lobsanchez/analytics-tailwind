@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
+    .card{
+        @apply bg-azuloscuro rounded-[30px] pt-[50px] pb-[70px];
+        h3{
+            @apply text-[30px] font-bold;
+        }
+        span{
+            @apply mt-[10px] text-base mb-[37px] text-azuloscuro;
+        }
+        div{
+            @apply mx[60px] mt-[37px] pt-[28px] mb-[40px] text-60 border-t; 
+        }
+    }
+    .card:hover{
+        @apply card--white;
+    }
+    .card--white{
+        @apply bg-white rounded-[30px] pt-[50px] pb-[70px] text-black;
+    }
 @tailwind utilities;

@@ -71,7 +71,7 @@
                </div>
                <img src="assets\images\screen-03.svg" alt="" srcset="">
           </section>
-          <section>
+          <section class="bg-darkblue">
                <h2 class="text-4xl font-bold text-center text-white">Pricing Plans</h2>
                <p class="text-center text-secondary mt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. </p>
                <div class="grid grid-cols-3 gap-20 m-auto mt-16 text-center place-items-center">
@@ -85,7 +85,7 @@
                          <div><span class="text-base text-secondary">per month</span></div>
                          <button class="px-20 py-2 mt-10 mb-16 text-base text-white border hover:text-main rounded-4xl">Order</button>
                     </div>
-                    <div class="rounded[30px] w-80 bg-azuloscuro hover:bg-white">
+                    <div class="card">
                          <h3 class="font-bold text-white hover:text-main">Standard</h3>
                          <span>up to 20 users</span>
                          <div class="text-white hover:text-main">
