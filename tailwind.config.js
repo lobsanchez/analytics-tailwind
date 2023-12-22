@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    './*.{html,php}',
-    './assets/templates/*.{html,php}',
-    './assets/js/*.{html,js}',
-  ],
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       maxWidth: {
@@ -27,19 +23,15 @@ export default {
       },
       borderRadius:{
         '4xl': '5rem',
-      }
-    },
-    theme: {
+      },
       fontFamily: {
         'roboto': ['Roboto', 'Arial', 'sans-serif'],
       },
       container: {
         center: true,
       },
-    }
+    },
   },
-  plugins: [
-   
-  ],
+  plugins: [],
 }
 
