@@ -11,7 +11,8 @@ module.exports = {
         'screen-xl': '1180px',
       },
       backgroundImage: {
-        'header': "url('/assets/images/background-top.png')",
+        /** 'header': "url('../../images/background-header-left.png')", **/
+       
       },
       colors: {
         darkblue: '#172755',

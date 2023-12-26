@@ -1,22 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
-    .card{
-        @apply bg-azuloscuro rounded-[30px] pt-[50px] pb-[70px];
-        h3{
-            @apply text-[30px] font-bold;
-        }
-        span{
-            @apply mt-[10px] text-base mb-[37px] text-azuloscuro;
-        }
-        div{
-            @apply mx-[60px] mt-[37px] pt-[28px] mb-[40px] border-t; 
-        }
-    }
-    .card:hover{
-        @apply card--white;
-    }
-    .card--white{
-        @apply bg-white rounded-[30px] pt-[50px] pb-[70px] text-black;
-    }
 @tailwind utilities;
+
+.card{
+    @apply w-80 bg-azuloscuro rounded-[30px]  ;
+    h3{
+        @apply pt-12 pb-2 text-3xl font-bold text-white hover:text-main;
+    }
+    span{
+        @apply text-lg text-secondary;
+    }
+    .linea{
+        @apply mt-[37px] h-[1px] w-56 bg-secondary mx-auto;
+    }
+    .precio{
+        @apply mt-[28px] text-white text-[60px] font-bold first-letter:text-[30px] first-letter:font-normal;
+    }
+    button{
+        @apply mt-10 mb-[70px] px-20 py-2 text-base text-white border rounded-4xl;
+    }
+}
+.card:hover{
+    @apply bg-white;
+    .precio, h3{
+        @apply text-main;
+    }
+    button{
+        @apply text-white bg-red;
+    }
+}
+section>.linea{
+    @apply mt-[196px] h-[1px] w-[74%] bg-secondary mx-auto;
+}
+li:hover{
+    @apply text-white;
+}
+
+.features{
+    img{
+        @apply mx-auto mt-[81px] mb-[26px];
+    }
+    h3{
+        @apply text-main text-[16px] font-bold text-center mb-[15px];
+    }
+    p{
+        @apply text-secondary text-center text-[16px];
+    } 
+}
+.image-footer{
+    background-image: url("../../images/background-footer.png");
+    background-repeat:no-repeat;
+    background-position: right bottom;
+}
+.image-header{
+    background-image: url("../../images/background-header.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
